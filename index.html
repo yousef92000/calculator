@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="operations">
+        <meta name="keywords" content="calc">
+        <meta name="author" content="yousef">
+        <title>Calcalutor</title>
+        <link rel="icon" href="images/logo.jpg ">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="output">
+                    <input type="text" readonly id="res" placeholder="0.0">
+                </div>
+                <div class="buttons">
+                    <div id="c" onclick="res.value = ''">
+                        <button>c</button>
+                    </div>
+                    <div id="del" onclick="res.value = res.value.substring(0, res.value.length - 1)">
+                        <button>Del</button>
+                    </div>
+                    <div id="pers" onclick="res.value += '%'">%</div>
+                    <div id="div" onclick="res.value += '&#247;'">
+                        <button>&#247</button>
+                    </div>
+                    <div onclick="res.value += 7">
+                        <button>7</button>
+                    </div>
+                    <div onclick="res.value += 8">
+                        <button>8</button>
+                    </div>
+                    <div onclick="res.value += 9">
+                        <button>9</button>
+                    </div>
+                    <div id="mul" onclick="res.value += '&#215;'">
+                        <button data-operation>&#215</button>
+                    </div>
+                    <div onclick="res.value += 4">
+                        <button>4</button>
+                    </div>
+                    <div onclick="res.value += 5">
+                        <button>5</button>
+                    </div>
+                    <div onclick="res.value += 6">
+                        <button>6</button>
+                    </div>
+                    <div id="add" onclick="res.value += '+'">
+                        <button>+</button>
+                    </div>
+                    <div onclick="res.value += 1">
+                        <button>1</button>
+                    </div>
+                    <div onclick="res.value += 2">
+                        <button>2</button>
+                    </div>
+                    <div onclick="res.value += 3">
+                        <button>3</button>
+                    </div>
+                    <div id="sub" onclick="res.value += '-'">
+                        <button >-</button>
+                    </div>
+                    <div id="zero" onclick="res.value += 0">
+                        <button >0</button>
+                    </div>
+                    <div id="dot" onclick="res.value += '.'">
+                        <button>.</button>
+                    </div>
+                    <div id="eql" onclick="calc()">
+                        <button>=</button>
+                    </div>
+                </div>
+                <!-- <div class="mode" onclick="chMode()">
+                    <i id="mode" class="fa-solid fa-moon"></i>
+                </div> -->
+                <div class="mode">
+                    <i id="mode" class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+        <script src="js/all.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
